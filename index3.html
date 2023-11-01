@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Pic_Project/Etec Logo.png" type="image/x-icon">
+    <title>ETEC Center</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="dashbord">
+            <div class="top-brand">
+                <div class="lgo">
+                    <a href="http://127.0.0.1:5501/index.html">
+                        <img src="Pic_Project/Etec Logo.png" alt="">
+                     </a>
+                </div>
+                <h5 class="text-light align-middle">ETEC CENTER</h5>         
+            </div>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <ul>
+                <li>
+                    <a href="http://127.0.0.1:5501/index.html">
+                        <span class="icon">
+                            <i class="bi bi-house-door-fill"></i>
+                        </span>
+                        <span class="b-name">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon">
+                            <i class="bi bi-patch-minus-fill"></i>
+                        </span>
+                        <span class="b-name">Program</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon">
+                            <i class="bi bi-info-square-fill"></i>
+                        </span>
+                        <span class="b-name">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon">
+                            <i class="bi bi-gear-fill"></i>
+                        </span>
+                        <span class="b-name">Setting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <button class="btn" id="menu"><i class="bi bi-list"></i></button>
+                </div>
+            </div>
+            <div class="regist">
+                <div class="r-now">
+                    <h1>Register Now</h1>
+                    <h4>We love Information Technology</h4>
+                    <!-- Button trigger modal -->
+                    <button id="btn-re" type="button" class="btn btn-primary col-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Register
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg text-dark">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                                <div class="modal-body">
+                                    <form action="" class="mx-auto bg-light text-dark px-3 row" id="registration" >
+                                        <h1 class="text-center form-label">Register Form</h1>
+                                        <div class="col-md-6 mt-4">
+                                            <label for="" class="form-label">Full Name</label>
+                                            <input type="text"  id="fullname" class="form-control" placeholder="Full Name" >
+                                        </div>
+                                        <div class="col-md-6 mt-4">
+                                            <label for="" class="form-label">Nick Name</label>
+                                            <input type="text"  id="nickname" class="form-control" placeholder="Nick Name"  >
+                                        </div>
+                                        <div class="col-md-12 mt-4">
+                                            <label for="" class="form-label">Email Address</label>
+                                            <input type="text"  id="email" class="form-control" placeholder="Email Address"  >
+                                        </div>
+                                        <div class="col-md-6 mt-4">
+                                            <label for="" class="form-label">Date of Birth</label>
+                                            <input type="date"  id="dof" class="form-control"   >
+                                        </div>
+                                        <div class="col-md-6 mt-4">
+                                            <label for="" class="form-label">Gender</label>
+                                            <select  id="gender" class="form-select" >
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 mt-4">
+                                            <label for="" class="form-label">Course</label>
+                                            <select  id="course" class="form-select" >
+                                                <option value="C/C++">C/C++ Course</option>
+                                                <option value="HTML,CSS,JS">HTML,CSS,JS</option>
+                                                <option value="PHP">PHP Course</option>
+                                                <option value="React-JS">React JS</option>
+                                                <option value="JAVA">Java</option>
+                                                <option value="Flutter">Flutter</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 mt-4">
+                                            <label for="" class="form-label">University</label>
+                                            <input type="text"  id="university" class="form-control" placeholder="University" >
+                                        </div>
+                                        <div class="col-md-6 mt-4">
+                                            <label for="" class="form-label">Phone Number</label>
+                                            <input type="text"  id="phone" class="form-control" placeholder="Phone Number" >
+                                        </div>
+                                        <div class="col-md-6 mt-4">
+                                            <label for="" class="form-label">Time for study</label>
+                                            <select id="shift" class="form-select" >
+                                                <option value="Morning">Morning Shift</option>
+                                                <option value="Afternoo">Afternoon Shift</option>
+                                                <option value="Evening">Evening Shift</option>
+                                                <option value="Online">Online</option>
+                                            </select>
+                                        </div>
+                                        <div class="but d-flex justify-content-end">
+                                            <button class="btn btn-primary col-2 m-3" type="button" id="regist">Register</button>
+                                            <button class="btn btn-warning m-3 col-2" type="button" id="up" >Update</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="r-pic">
+                    <div class="image">
+                        <img src="Pic_Project/carbon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <div class="block row d-flex justify-content-between">
+                <div class="card1 mb-5">
+                    <div class="pic">
+                        <i class="bi bi-person-video2"></i>
+                    </div>
+                    <div class="data">
+                        <div class="title">
+                            <h2>New Students</h2>
+                        </div>
+                        <div class="count">
+                            <h4>1.2k</h4>
+                            <p>impression - 70%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2 mb-5">
+                    <div class="pic">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="data1">
+                        <div class="title">
+                            <h2>Total Students</h2>
+                        </div>
+                        <div class="count">
+                            <h4>1.5k</h4>
+                            <p>impression - 50%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card3 mb-5">
+                    <div class="pic">
+                        <i class="bi bi-binoculars-fill"></i>
+                    </div>
+                    <div class="data2">
+                        <div class="title">
+                            <h2>Viewers</h2>
+                        </div>
+                        <div class="count">
+                            <h4>4.5k</h4>
+                            <p>impression - 90%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="student">
+                <div class="student-tbl">
+                    <h1>Recent Registers</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Gender</td>
+                                <td>Course</td>
+                                <td>Tel</td>
+                                <td>Email Address</td>
+                                <td>Time fo study</td>
+                                <td>Action</td>
+                            </tr>
+                        </thead>
+
+                        <!-- EXAMPLE TABLE -->
+                        <thead>
+                            <tr>
+                                <td>Ly Daro</td>
+                                <td>Female</td>
+                                <td>C/C++</td>
+                                <td>096 705 643</td>
+                                <td>daroly@gmail.com</td>
+                                <td>Online</td>
+                                <td>
+                                    <button class="btn btn-success">Edit</button>
+                                    <button class="btn btn-danger">Remove</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chem Sreyma</td>
+                                <td>Female</td>
+                                <td>PHP </td>
+                                <td>012 400 201</td>
+                                <td>Sreyma@gmail.com</td>
+                                <td>Afternoon</td>
+                                <td>
+                                    <button class="btn btn-success">Edit</button>
+                                    <button class="btn btn-danger">Remove</button>
+                                </td>
+                            </tr>
+                        </thead>
+                         <!-- EXAMPLE TABLE -->
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</html>

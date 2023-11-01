@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du&family=Lilita+One&family=Oswald:wght@500&family=Roboto+Slab&family=Rowdies&family=Zilla+Slab:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+/*=================navbar================ */
+.dashbord{
+    position: fixed;
+    padding: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(#141e30,  #243b55);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.dashbord.active{
+    width: 70px;
+    transition: 0.5s;
+}
+.dashbord .top-brand {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+
+}
+.dashbord .top-brand .lgo{
+    width: 20%;
+    overflow: hidden;
+}
+.dashbord .top-brand .lgo img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+.dashbord .top-brand h5{
+    font-family: 'Zilla Slab', serif;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 10px;
+}
+.dashbord ul{
+    position: absolute;
+    padding-left: 0 !important;
+    width: 100%;
+}
+.dashbord ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+}
+.dashbord ul li i{
+    font-size: 25px;
+    padding: 0 10px;
+}
+.dashbord ul li:hover{
+    background-color: white;
+}
+.dashbord ul li a {
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+  }
+.dashbord ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 50px;
+    line-height: 57px;
+    text-align: center;
+  }
+.dashbord ul li a .b-name {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+  }
+.dashbord ul li:hover a{
+    color: #243b55;
+}
+.dashbord ul li:hover a::before{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px white;
+  pointer-events: none;
+}
+.dashbord ul li:hover a::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px white;
+  pointer-events: none;
+}
+/*================= main ===================*/
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-width: 100vh;
+    background-color: #243b55;
+    transition: 0.5s;
+}
+.main.active{
+    width: calc(100% - 70px);
+    left: 70px;
+}
+.main .topbar .toggle button i{
+    color: white;
+    font-size: 30px;
+}
+.main .regist{
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+
+} 
+.main .regist .r-now,.r-pic{
+    width: 50%;
+    height: 40%;
+    padding: 0;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+.main .regist .r-now{
+    margin: 40px;
+}
+.main .regist .r-now h4{
+   color: rgb(169, 169, 169);
+   margin-bottom: 25px;
+}
+.r-pic .image{
+    border: 2px solid #eee;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 80px;
+    overflow: hidden;
+}
+.r-pic .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*==================== card 1 =================*/
+.block{
+    padding: 50px 70px;
+}
+.block .card1{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0, 195, 255, 0.322);
+    color: white;
+}
+.block .card1 .pic i{
+    font-size: 110px;
+    padding: 0 25px;
+}
+.block .card1 .data .title h2{
+    font-family: 'Lilita One', sans-serif;
+    margin: 0;
+}
+.block .card1 .data .count{
+    display: flex;
+}
+.data .count h4{
+    font-size: 40px;
+    color: rgba(0, 255, 221, 0.68);
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding-right: 20px;
+    border-right: 1px solid rgba(247, 245, 245, 0.408);
+    border-width: 2px;
+}
+.data .count p{
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    color: #eee;
+    align-items: end;
+    margin: 0;
+    padding-left: 10px;
+}
+/*================= Card 2 =================*/
+.block .card2{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0, 255, 170, 0.322);
+    color: white;
+}
+.block .card2 .pic i{
+    font-size: 110px;
+    padding: 0 25px;
+}
+.block .card2 .data1 .title h2{
+    font-family: 'Lilita One', sans-serif;
+    margin: 0;
+}
+.block .card2 .data1 .count{
+    display: flex;
+}
+.data1 .count h4{
+    font-size: 40px;
+    color: rgba(255, 174, 0, 0.68);
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding-right: 20px;
+    border-right: 1px solid rgba(247, 245, 245, 0.408);
+    border-width: 2px;
+}
+.data1 .count p{
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    color: white;
+    align-items: end;
+    margin: 0;
+    padding-left: 10px;
+}
+/*================= Card 3 =================*/
+.block .card3{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: rgba(161, 114, 3, 0.493);
+    color: white;
+}
+.block .card3 .pic i{
+    font-size: 110px;
+    padding: 0 25px;
+}
+.block .card3 .data2 .title h2{
+    font-family: 'Lilita One', sans-serif;
+    margin: 0;
+}
+.block .card3 .data2 .count{
+    display: flex;
+}
+.data2 .count h4{
+    font-size: 40px;
+    color: rgba(0, 255, 187, 0.613);
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding-right: 20px;
+    border-right: 1px solid rgba(247, 245, 245, 0.408);
+    border-width: 2px;
+}
+.data2 .count p{
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    color: #eee;
+    align-items: end;
+    margin: 0;
+    padding-left: 10px;
+}
+/*=======================================*/
+.block .card1,.card2,.card3	{
+    width: 390px;
+    height: 205px;
+    /* background-color: white; */
+    border-radius: 20px;
+}
+.card1{
+    box-shadow: 0 0 30px -5px rgb(4, 108, 129);
+}
+.card2{
+    box-shadow: 0 0 30px -5px rgb(4, 129, 62);
+}
+.card3{
+    box-shadow: 0 0 30px -5px rgb(4, 108, 129);
+}
+.block .card1:hover,.card2:hover,.card3:hover{
+    transform: scale(1.04);
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: rgba(5, 34, 65, 0.87);
+    box-shadow: 0 0 30px -5px rgb(235, 242, 243);
+}
+
+/*================ Table =================*/
+.student{
+    position: relative;
+    width: 100%;
+    padding: 0 60px;
+}
+.student .student-tbl{
+    position: relative;
+    padding: 20px;
+    color: white;
+}
+.student h1{
+    padding-bottom: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+.student table{
+    width: 100%;
+    margin-top: 10px;
+}
+.student table thead:nth-child(1) td{
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(245, 245, 245, 0.25);
+}
+.student table tbody td{
+    font-size: 18px;
+    border-bottom: 2px solid rgba(245, 245, 245, 0.25);
+    padding: 10px;
+    font-family: 'Kay Pho Du', serif;
+    font-weight: 0;
+}
+.student table thead:nth-child(2) td{
+    font-size: 18px;
+    border-bottom: 2px solid rgba(245, 245, 245, 0.25);
+    padding: 10px;
+    font-family: 'Kay Pho Du', serif;
+    font-weight: 0;
+}
+.row{
+    justify-content: center;
+    margin-right: 0;
+}
+
+
+
+
+@media (min-width: 300px){
+    .dashbord{
+        position: fixed;
+        padding: 0;
+        width: 300px;
+        height: 100%;
+        background: linear-gradient(#141e30,  #243b55);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .dashbord.active{
+        width: 70px;
+        transition: 0.5s;
+    }
+    .main{
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        min-width: 100vh;
+        background-color: #243b55;
+        transition: 0.5s;
+    }
+    .main.active{
+        width: calc(100% - 70px);
+        left: 70px;
+    }
+    .regist{
+        width: 100%;
+    }
+    .regist .r-now{
+        width: 100% !important;
+    }
+    .regist h1{
+        font-size: 70px;
+    }
+    .r-pic{
+        display: none;
+    }
+    .student{
+        display: none;
+   } 
+   .row{
+    justify-content: center !important;
+   }
+} 
+@media (min-width: 576px) { 
+    .dashbord{
+        position: fixed;
+        padding: 0;
+        width: 300px;
+        height: 100%;
+        background: linear-gradient(#141e30,  #243b55);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .dashbord.active{
+        width: 70px;
+        transition: 0.5s;
+    }
+    .main{
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        min-width: 100vh;
+        background-color: #243b55;
+        transition: 0.5s;
+    }
+    .main.active{
+        width: calc(100% - 70px);
+        left: 70px;
+    }
+    .student{
+        display: none;
+   } 
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 915px) { 
+    .row{
+        justify-content: space-between !important;
+       }
+    .r-pic .image{
+        display: block;
+    }
+    .regist{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .regist .r-now{
+        width: 50% !important;
+    }
+    .regist h1{
+        font-size: 60px;
+    }
+    .r-pic{
+        display: block;
+    }
+    .student{
+        display: none;
+   } 
+
+ }
+ 
+ @media (min-width: 1006px){
+    .block .card1,.card2,.card3	{
+        width: 280px ;
+        height: 120px;
+    }
+    .block .data h4{
+        font-size: 25px;
+    }
+    .block .card1 .pic i{
+        font-size: 50px;
+    }
+    .block .data .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 20px;
+        margin: 0;
+    }
+
+
+
+    .block .data1 h4{
+        font-size: 25px;
+    }
+    .block .card2 .pic i{
+        font-size: 50px;
+    }
+    .block .data1 .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 20px;
+        margin: 0;
+    }
+
+
+
+    .block .data2 h4{
+        font-size: 25px;
+    }
+    .block .card3 .pic i{
+        font-size: 50px;
+    }
+    .block .data2 .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 20px;
+        margin: 0;
+    }
+    .student{
+        width: 100% !important;
+        display: block !important;
+   } 
+ }
+ @media (min-width: 1200px){
+    .dashbord{
+        position: fixed;
+        padding: 0;
+        width: 300px;
+        height: 100%;
+        background: linear-gradient(#141e30,  #243b55);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .dashbord.active{
+        width: 70px;
+        transition: 0.5s;
+    }
+    .main{
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        min-width: 100vh;
+        background-color: #243b55;
+        transition: 0.5s;
+    }
+    .main.active{
+        width: calc(100% - 70px);
+        left: 70px;
+    }
+    
+ }
+@media (min-width: 1350px) { 
+    .block .card1,.card2,.card3	{
+        width: 380px ;
+        height: 210px;
+    }
+    .dashbord{
+        position: fixed;
+        padding: 0;
+        width: 300px;
+        height: 100%;
+        background: linear-gradient(#141e30,  #243b55);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .dashbord.active{
+        width: 70px;
+        transition: 0.5s;
+    }
+    .main{
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        min-width: 100vh;
+        background-color: #243b55;
+        transition: 0.5s;
+    }
+    .main.active{
+        width: calc(100% - 70px);
+        left: 70px;
+    }
+    
+
+    .block .data h4{
+        font-size: 28px;
+    }
+    .block .card1 .pic i{
+        font-size: 100px;
+    }
+    .block .data .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 30px;
+        margin: 0;
+    }
+
+
+
+    .block .data1 h4{
+        font-size: 28px;
+    }
+    .block .card2 .pic i{
+        font-size: 100px;
+    }
+    .block .data1 .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 30px;
+        margin: 0;
+    }
+
+
+
+    .block .data2 h4{
+        font-size: 28px;
+    }
+    .block .card3 .pic i{
+        font-size: 100px;
+    }
+    .block .data2 .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 30px;
+        margin: 0;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1407px) { 
+    .block .card1,.card2,.card3	{
+        width: 320px ;
+        height: 130px;
+    }
+    
+    .dashbord{
+        position: fixed;
+        padding: 0;
+        width: 300px;
+        height: 100%;
+        background: linear-gradient(#141e30,  #243b55);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .dashbord.active{
+        width: 70px;
+        transition: 0.5s;
+    }
+    .main{
+        position: absolute;
+        width: calc(100% - 300px);
+        left: 300px;
+        min-width: 100vh;
+        background-color: #243b55;
+        transition: 0.5s;
+    }
+    .main.active{
+        width: calc(100% - 70px);
+        left: 70px;
+    }
+
+    .block .data h4{
+        font-size: 18px;
+    }
+    .block .card1 .pic i{
+        font-size: 70px;
+    }
+    .block .data .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 20px;
+        margin: 0;
+    }
+
+
+
+    .block .data1 h4{
+        font-size: 18px;
+    }
+    .block .card2 .pic i{
+        font-size: 70px;
+    }
+    .block .data1 .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 20px;
+        margin: 0;
+    }
+
+
+
+    .block .data2 h4{
+        font-size: 18px;
+    }
+    .block .card3 .pic i{
+        font-size: 70px;
+    }
+    .block .data2 .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 20px;
+        margin: 0;
+    }
+}
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1523px) { 
+    .block .card1,.card2,.card3	{
+        width: 320px;
+        height: 150px;
+    }
+    
+
+
+    .block .data h4{
+        font-size: 25px;
+    }
+    .block .card1 .pic i{
+        font-size: 80px;
+    }
+    .block .data .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 22px;
+        margin: 0;
+    }
+
+
+
+    .block .data1 h4{
+        font-size: 25px;
+    }
+    .block .card2 .pic i{
+        font-size: 80px;
+    }
+    .block .data1 .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 22px;
+        margin: 0;
+    }
+
+
+
+    .block .data2 h4{
+        font-size: 25px;
+    }
+    .block .card3 .pic i{
+        font-size: 80px;
+    }
+    .block .data2 .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 22px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1630px) {
+    .row .card1,.card2,.card3	{
+        width: 360px ;
+        height: 200px;
+    }
+}
+@media (min-width: 1680px) {
+    .row .card1,.card2,.card3	{
+        width: 390px ;
+        height: 205px;
+    }
+
+    .block .data h4{
+        font-size: 28px;
+    }
+    .block .card1 .pic i{
+        font-size: 110px;
+    }
+    .block .data .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 25px;
+        margin: 0;
+    }
+
+
+
+    .block .data1 h4{
+        font-size: 28px;
+    }
+    .block .card2 .pic i{
+        font-size: 110px;
+    }
+    .block .data1 .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 25px;
+        margin: 0;
+    }
+
+
+
+    .block .data2 h4{
+        font-size: 28px;
+    }
+    .block .card3 .pic i{
+        font-size: 110px;
+    }
+    .block .data2 .title h2{
+        font-family: 'Lilita One', sans-serif;
+        font-size: 25px;
+        margin: 0;
+    }
+}
